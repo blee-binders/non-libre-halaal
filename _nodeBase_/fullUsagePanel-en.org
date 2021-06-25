@@ -1,4 +1,10 @@
 * B|
+####+BEGIN: bxPanel:common/title-plus
+#+title: panels/non-libre-halaal
+#+roam_tags: branch
+#+roam_key: bisos/panels/non-libre-halaal
+[[roam:bisos/panels]]
+####+END
 ####+BEGIN: blee:bxPanel:topPanelControls
 *  [[elisp:(org-cycle)][|#Control|]] :: [[elisp:(blee:bnsm:menu-back)][Back]] [[elisp:(toggle-read-only)][read/wr]] | [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Overview]]  [[elisp:(progn (org-shifttab) (org-content))][Content]] | [[elisp:(delete-other-windows)][(1)]] | [[elisp:(progn (save-buffer) (kill-buffer))][S&Q]] [[elisp:(save-buffer)][Save]] [[elisp:(kill-buffer)][Quit]] [[elisp:(bury-buffer)][Bury]]  [[elisp:(magit)][Magit]]  [[elisp:(org-cycle)][| ]]
 **  [[elisp:(blee:buf:re-major-mode)][Re-Major-Mode]] ||  [[elisp:(org-dblock-update-buffer-bx)][Update Buf Dblocks]] || [[elisp:(org-dblock-bx-blank-buffer)][Blank Buf Dblocks]] || [[elisp:(bx:panel:variablesShow)][bx:panel:variablesShow]]
@@ -18,10 +24,12 @@
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
 * [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_   General Panels ::   [[img-link:file:/bisos/blee/env/images/bystarInside.jpg][http://www.by-star.net]] *|*  [[elisp:(find-file "/libre/ByStar/InitialTemplates/activeDocs/listOfDocs/fullUsagePanel-en.org")][BxDE Top Panel]] *|* [[elisp:(blee:bnsm:panel-goto "/libre/ByStar/InitialTemplates/activeDocs/planning/Main")][ByStar Planning]]
 
-*   =Decedent Panels=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/non-libre-halaal/conferencingMessaging/_nodeBase_")][ =conferencingMessaging= ]] *|* 
-*   =Sibling Panels=   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/_nodeBase_")][ =bisos= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/_nodeBase_")][ =bisos-apps= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-periphery/_nodeBase_")][ =bisos-periphery= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/blee/_nodeBase_")][ =blee= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bxde/_nodeBase_")][ =bxde= ]] *|* 
-*   =Sibling Panels=   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/espoused/_nodeBase_")][ =espoused= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/non-libre-halaal/_nodeBase_")][ =non-libre-halaal= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/panelsRoot")][panelsRoot]] *|* 
-*   =Ancestor Panles=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/_nodeBase_")][ =panels= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos")][bisos]] *|* 
+*   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/non-libre-halaal/conferencingMessaging/_nodeBase_")][ =conferencingMessaging= ]] *|* 
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/_nodeBase_")][ =bisos-apps= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/_nodeBase_")][ =bisos-core= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-dev/_nodeBase_")][ =bisos-dev= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-model/_nodeBase_")][ =bisos-model= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-periphery/_nodeBase_")][ =bisos-periphery= ]] *|* 
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-svcs/_nodeBase_")][ =bisos-svcs= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/blee-core/_nodeBase_")][ =blee-core= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/blee-dev/_nodeBase_")][ =blee-dev= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/blee-model/_nodeBase_")][ =blee-model= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bxde-core/_nodeBase_")][ =bxde-core= ]] *|* 
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bxde-dev/_nodeBase_")][ =bxde-dev= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bxde-model/_nodeBase_")][ =bxde-model= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/connectivity/_nodeBase_")][ =connectivity= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/desktop/_nodeBase_")][ =desktop= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/espoused/_nodeBase_")][ =espoused= ]] *|* 
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/non-libre-halaal/_nodeBase_")][ =non-libre-halaal= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/overview")][overview]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/panelsRoot")][panelsRoot]] *|* 
+*   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/_nodeBase_")][ =panels= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos")][bisos]] *|* 
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"
@@ -30,27 +38,6 @@
 ** 
 ** Overview Comes Here.
 ** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Panel Tree Navigation" :anchor "panelTreeNav" :extraInfo ""
-* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Panel Tree Navigation:* |]] <<panelTreeNav>>   [[elisp:(org-shifttab)][<)]] E|
-####+END
-####+BEGIN: blee:bxPanel:linedTreeNavigator :model "auto" :outLevel 2
-** [[elisp:(show-all)][|N]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]    <<~non-libre-halaal~>> ~nil:~ :inDblock 
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/non-libre-halaal/conferencingMessaging/_nodeBase_")][@ =conferencingMessaging= @]]    ::  Node: /conferencingMessaging/
-** [[elisp:(show-all)][|N]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]    <<~non-libre-halaal~>> ~nil:~ :inDblock 
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/_nodeBase_")][@ =bisos= @]]    ::  Node: /bisos/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/_nodeBase_")][@ =bisos-apps= @]]    ::  Node: /bisos-apps/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-periphery/_nodeBase_")][@ =bisos-periphery= @]]    ::  Node: /bisos-periphery/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/blee/_nodeBase_")][@ =blee= @]]    ::  Node: /blee/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bxde/_nodeBase_")][@ =bxde= @]]    ::  Node: /bxde/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/espoused/_nodeBase_")][@ =espoused= @]]    ::  Node: /espoused/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/non-libre-halaal/_nodeBase_")][@ =non-libre-halaal= @]]    ::  Node: /non-libre-halaal/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/panelsRoot")][@ *panelsRoot* @]]    ::  Leaf: /panelsRoot/
-** [[elisp:(show-all)][|N]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]    <<~non-libre-halaal~>> ~nil:~ :inDblock 
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/_nodeBase_")][@ =panels= @]]    ::  Node: /panels/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos")][@ *bisos* @]]    ::  Leaf: /bisos/
-** [[elisp:(org-shifttab)][<)]] E|
-####+END
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END
