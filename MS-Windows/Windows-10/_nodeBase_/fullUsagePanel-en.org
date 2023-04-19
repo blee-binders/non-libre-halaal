@@ -34,8 +34,12 @@
 ####+END
 ** +
 ** Process of installing windows 10.
+** Three approaches were considered. 1) Vagrant Image, 2) Script Based 3) virt-manager GUI
+** Looked at all 3. Decided on [[with virt-manager]]
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Obtaining  images" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Obtaining  images:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
 ** https://www.funtoo.org/Windows_10_Virtualization_with_KVM
@@ -43,49 +47,60 @@
 ** https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-virtio/
 ** B|
 
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Windows 10 on Debian-KVM  With virt-manager" :anchor "" :extraInfo ""
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Windows 10 on Debian-KVM  With virt-manager" :anchor "with virt-manager" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Windows 10 on Debian-KVM  With virt-manager:* |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Windows 10 on Debian-KVM  With virt-manager:* |]] <<with virt-manager>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
 ** https://getlabsdone.com/install-windows-10-on-ubuntu-kvm/
 ** --------
 ** virt-manager
 ** -----------------
-** virt-manager -- Create new virtual manager
+** virt-manager -- Create new virtual machine
 ** A new window now will pop up. In the New VM wizard select Local install media and click on forward.
+** Images are typically in: ~/vm-win10
 ** Browse -- Local -- Select /Win10_22H2_English_x86.iso/ --- See MS Win 10 in box below -- forwad
 ** Create new VM --- On a 16Meg Host Use 6144 Meg for Guest, 4 Cpus for Guets when 8 in host 75Gig disk
 ** Create new VM --- win10Pro-1-accounting
 ** Create new VM --- ~IMPORTANT~ -- choose "Customize configuration before install"
 ** Yes to "Virtaul Network is not active"
 ** virt-manager --- Virtual Hardware Adjustments
-** Virtual Hardware Adjustment: SATA Disk 1  --- Change SATA to VirtIO --- Apply
+** NOT-NEEDED:Virtual Hardware Adjustment: SATA Disk 1  --- Change SATA to VirtIO --- Apply
 ** Virtual Hardware Adjustment: NIC: Change Device model to virtio
-** Virtual Hardware Adjustment: Add Hardware -- Storage Device type -- CDROM device /bxo/r3/usg/bystar/vm-win10/virtio-win-0.1.229.iso
-** Virtual Hardware Adjustment: Select create custom storage  /bxo/r3/usg/bystar/vm-win10/virtio-win-0.1.229.iso
-** Virtual Hardware Adjustment: Boot Options  1) Stat CDROM 2) VirtIO Disk 1 3) SATA CDROM 2 --- Applu
+** Virtual Hardware Adjustment: Add Hardware -- Storage Device type -- CDROM device
+** Virtual Hardware Adjustment: Select create custom storage  /bxo/r3/usg/bystar/vm-win10/virtio-win-0.1.229.iso --- Finish
+** Virtual Hardware Adjustment: Boot Options  1) SATA CDROM-1 2) VirtIO Disk 1 3) SATA CDROM-2 --- Apply
 ** Virtual Hardware Adjustment: CPUs  Sockets 1 , Cores 4 , Threads 2
-** Begin Installation
+** Begin Installation (top green check-mark)
 ** ------------------  Windows Installation
 ** Install Now --- Enter Key
 ** Custom Windows Install Only -- NOT Upgrade: Install
-** Load Driver -- Browse CD Drive E: (virtio-win-0.1.229.iso)  amd64  w10
+** Load Driver -- Browse CD Drive E: (virtio-win-0.1.229.iso)  amd64  w10 --- RedHat viostor.inf -- Next
 ** Let The Installation continue
-** I don't have internet --- Continue with limited setup
+** "I don't have internet" --- "Continue with limited setup"
+** Turn off all privacy settings --- No Cortina
 ** This might take servral minutes
 ** ------------------  Windows 10 virtio drivers
-** Search for Device Manager And Run it
+** In Windows Search: "Device Manager" And Run it
 ** Locate "Ethernet Controller" --- Right Mouse Click Update Driver --- Browse my computer for drivers
-** Browse to Drive E   --- make sure Include subfolders is selected --- See redhad in there
+** Browse to Drive E   --- make sure Include subfolders is selected --- Next --- See redhad in there
 ** Next look for display adapters -- Microsoft Basic Display Adapter -- Right Mouse Click Update Driver
 ** Browse to Drive E   --- make sure Include subfolders is selected --- See Red Hat QXL controller
 ** Start Settings System Display -- Change Display Resolution to 1920x1080
+** virt-manager:  -- View -- Full Screen
+** Windows: Shutdown
 ** ------------------  Windows 10 After Shutdown Detach CDROM 1 and 2
 ** From virt-manager -- Click Edit then  Virtual Machine Details then Click on "light bulb" info icon
-** Select SATA CDROM1 -- Source Path click on x to get to "No Media Selected"
+** Select SATA CDROM1 -- Source Path -- Drop Down Select  "No Media Selected (/dev/sr0)" -- Apply
 ** Select SATA CDROM2 -- Source Path click on x to get to "No Media Selected"
 ** Reinstall CDROM1 as /dev/sr0
+** Run The VM --- Open It (Terminal on the very left) -- View Full Screen
+** ------------------  Windows 10 Site Configurations
+** Adding Samba Drives ---
+** File Manager -- On "This PC"  Right Mouse, Map Network Drive
+** Disk:: Leave Drive as Z: Folder type in  \\192.168.0.xx\anon -- reconnect at sign-in --- Finish
+** Printer:: Printers & scanners -- Add printers &scanner -- The printer that I want isn't listed
+** Printer:: Select a shared printer by name -- \\192.168.0.xx\Hewlett-Packard-HP-LaserJet-xx
 ** B|
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
