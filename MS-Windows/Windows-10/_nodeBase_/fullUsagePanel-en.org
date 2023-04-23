@@ -37,16 +37,15 @@
 ** Three approaches were considered. 1) Vagrant Image, 2) Script Based 3) virt-manager GUI
 ** Looked at all 3. Decided on [[with virt-manager]]
 ** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Obtaining  images" :anchor "" :extraInfo ""
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Obtaining Win10  images" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Obtaining  images:* |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Obtaining Win10  images:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
 ** https://www.funtoo.org/Windows_10_Virtualization_with_KVM
 ** https://www.microsoft.com/en-us/software-download/windows10ISO
 ** https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-virtio/
 ** B|
-
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Windows 10 on Debian-KVM  With virt-manager" :anchor "with virt-manager" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Windows 10 on Debian-KVM  With virt-manager:* |]] <<with virt-manager>>   [[elisp:(org-shifttab)][<)]] E|
