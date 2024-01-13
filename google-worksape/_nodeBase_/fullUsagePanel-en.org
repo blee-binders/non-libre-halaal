@@ -1,17 +1,17 @@
 * B|
 ####+BEGIN: bxPanel:common/title-plus
-#+title: conferencingMessaging/zoom
-#+roam_tags: leaf
-#+roam_key: non-libre-halaal/conferencingMessaging/zoom
-[[roam:non-libre-halaal/conferencingMessaging]]
+#+title: non-libre-halaal/google-worksape
+#+roam_tags: branch
+#+roam_key: panels/non-libre-halaal/google-worksape
+[[roam:panels/non-libre-halaal]]
 ####+END
 ####+BEGIN: blee:bxPanel:topPanelControls
 *  [[elisp:(org-cycle)][|#Control|]] :: [[elisp:(blee:bnsm:menu-back)][Back]] [[elisp:(toggle-read-only)][read/wr]] | [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Overview]]  [[elisp:(progn (org-shifttab) (org-content))][Content]] | [[elisp:(delete-other-windows)][(1)]] | [[elisp:(progn (save-buffer) (kill-buffer))][S&Q]] [[elisp:(save-buffer)][Save]] [[elisp:(kill-buffer)][Quit]] [[elisp:(bury-buffer)][Bury]]  [[elisp:(magit)][Magit]]  [[elisp:(org-cycle)][| ]]
 **  [[elisp:(bap:magit:bisos:current-bpo-repos/visit)][BPO-Repos-Magit]] ||
 **  [[elisp:(blee:buf:re-major-mode)][Re-Major-Mode]] ||  [[elisp:(org-dblock-update-buffer-bx)][Update Buf Dblocks]] || [[elisp:(org-dblock-bx-blank-buffer)][Blank Buf Dblocks]] || [[elisp:(bx:panel:variablesShow)][bx:panel:variablesShow]]
 **  [[elisp:(blee:menu-sel:comeega:maintenance:popupMenu)][||Maintenance]]
-**  This File :: *= /bisos/panels/non-libre-halaal/conferencingMessaging/zoom/fullUsagePanel-en.org =*
-* /file-truename:/  /bisos/git/auth/bxRepos/blee-binders/non-libre-halaal/conferencingMessaging/zoom/fullUsagePanel-en.org
+**  This File :: *= /bisos/panels/non-libre-halaal/google-worksape/_nodeBase_/fullUsagePanel-en.org =*
+* /file-truename:/  /bisos/git/auth/bxRepos/blee-binders/non-libre-halaal/google-worksape/_nodeBase_/fullUsagePanel-en.org
 *  [[elisp:(org-cycle)][|#Select|]]  :: (Results: [[elisp:(blee:bnsm:results-here)][Here]] | [[elisp:(blee:bnsm:results-split-below)][Below]] | [[elisp:(blee:bnsm:results-split-right)][Right]] | [[elisp:(blee:bnsm:results-other)][Other]] | [[elisp:(blee:bnsm:results-popup)][Popup]]) (Select:  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh -i currentsGetThenShow")][Show Currents]]  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh")][lpCurrentsAdmin.sh]] ) [[elisp:(org-cycle)][| ]]
 **  #See:  (Window: [[elisp:(blee:bnsm:results-window-show)][?]] | [[elisp:(blee:bnsm:results-window-set 0)][0]] | [[elisp:(blee:bnsm:results-window-set 1)][1]] | [[elisp:(blee:bnsm:results-window-set 2)][2]] | [[elisp:(blee:bnsm:results-window-set 3)][3]] ) || [[elisp:(lsip-local-run-command-here "echo pushd dest")][echo pushd dir]] || [[elisp:(lsip-local-run-command-here "lsf")][lsf]] || [[elisp:(lsip-local-run-command-here "pwd")][pwd]] |
 **  [[elisp:(org-cycle)][|#Destinations|]] :: [[Evolution]] | [[Maintainers]]  [[elisp:(org-cycle)][| ]]
@@ -19,33 +19,32 @@
 ####+END
 ####+BEGIN: blee:bxPanel:title :panelType "=bxPanel=" :title "auto"
 * [[elisp:(show-all)][(>]] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-*   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseTop-50.png][http://www.freeprotocols.org]]_ _   ~Leaf:: non-libre-halaal/conferencingMessaging -- zoom~   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseBottom-50.png][http://www.by-star.net]]
+*   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseTop-50.png][http://www.freeprotocols.org]]_ _   ~Node:: panels/non-libre-halaal -- google-worksape~   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseBottom-50.png][http://www.by-star.net]]
 * ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ####+BEGIN: blee:bxPanel:terseTreeNavigator :panelsList "bxPanel"
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
 * [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_   General Panels ::   [[img-link:file:/bisos/blee/env/images/bystarInside.jpg][http://www.by-star.net]] *|*  [[elisp:(find-file "/libre/ByStar/InitialTemplates/activeDocs/listOfDocs/fullUsagePanel-en.org")][BxDE Top Panel]] *|* [[elisp:(blee:bnsm:panel-goto "/libre/ByStar/InitialTemplates/activeDocs/planning/Main")][ByStar Planning]]
 
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/non-libre-halaal/conferencingMessaging/skype")][skype]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/non-libre-halaal/conferencingMessaging/teams/_nodeBase_")][ =teams= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/non-libre-halaal/conferencingMessaging/whatsApp")][whatsApp]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/non-libre-halaal/conferencingMessaging/zoom")][zoom]] *|*
-*   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "//bisos/panels/non-libre-halaal/conferencingMessaging/zoom")][zoom]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/non-libre-halaal/conferencingMessaging/_nodeBase_")][ =conferencingMessaging= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/non-libre-halaal/_nodeBase_")][ =non-libre-halaal= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/_nodeBase_")][ = /<panels>/ = ]] *|* [[elisp:(dired "//bisos")][ ~bisos~ ]] *|*
+*                                        *━━━━━━━━━━━━━━━━━━━━━━━━*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/non-libre-halaal/ChatGPT/_nodeBase_")][ =ChatGPT= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/non-libre-halaal/MS-Windows/_nodeBase_")][ =MS-Windows= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/non-libre-halaal/conferencingMessaging/_nodeBase_")][ =conferencingMessaging= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/non-libre-halaal/google-worksape/_nodeBase_")][ =google-worksape= ]] *|*
+*   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "//bisos/panels/non-libre-halaal/_nodeBase_")][ =non-libre-halaal= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/_nodeBase_")][ = /<panels>/ = ]] *|* [[elisp:(dired "//bisos")][ ~bisos~ ]] *|*
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
-** 
+** +
 ** Overview Comes Here.
 ** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Linux Installation" :anchor "anchor" :extraInfo "extraInfo"
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Gmail For Google-Workspace -- DNS Setup" :anchor "anchor" :extraInfo "extraInfo"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Linux Installation:* |]] <<anchor>> extraInfo  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Gmail For Google-Workspace -- DNS Setup:* |]] <<anchor>> extraInfo  [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "ICM" :icmName "nlcZoomBinsPrep.sh" :comment "" :afterComment ""
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ICM/ :: [[elisp:(lsip-local-run-command "nlcZoomBinsPrep.sh -i examples")][nlcZoomBinsPrep.sh]]  [[elisp:(lsip-local-run-command "nlcZoomBinsPrep.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "nlcZoomBinsPrep.sh -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
-####+END:
-####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "BinsPrep" :icmName "nlcZoomBinsPrep.sh -i fullUpdate" :comment "" :afterComment ""
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /BinsPrep/ :: [[elisp:(lsip-local-run-command "nlcZoomBinsPrep.sh -i fullUpdate")][nlcZoomBinsPrep.sh -i fullUpdate]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
-####+END:
+** +
+** https://support.google.com/a/answer/140034?sjid=15269482283829661574-NA
+** https://support.google.com/a/answer/174125?hl=en&ref_topic=2683820&sjid=3321647773550382645-NA#
+** B|
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END
@@ -77,7 +76,7 @@
 #+STARTUP: inlineimages
 #+SEQ_TODO: TODO WAITING DELEGATED | DONE DEFERRED CANCELLED
 #+TAGS: @desk(d) @home(h) @work(w) @withInternet(i) @road(r) call(c) errand(e)
-#+CATEGORY: L:zoom
+#+CATEGORY: N:google-worksape
 
 ####+END
 ####+BEGIN: blee:bxPanel:footerEmacsParams :primMode "org-mode"

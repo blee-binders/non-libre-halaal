@@ -16,7 +16,7 @@ SEED="
 *  /[dblock]/ /Seed/ :: [[file:/bisos/core/bsip/bin/seedBleePanelProc.sh]] |
 "
 FILE="
-*  /This File/ :: /bisos/git/auth/bxRepos/blee-binders/non-libre-halaal/conferencingMessaging/_nodeBase_/bleePanelProc.sh
+*  /This File/ :: /bisos/panels/non-libre-halaal/conferencingMessaging/_nodeBase_/bleePanelProc.sh
 "
 if [ "${loadFiles}" == "" ] ; then
     /bisos/core/bsip/bin/seedBleePanelProc.sh -l $0 "$@"
