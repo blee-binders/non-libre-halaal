@@ -64,7 +64,7 @@
 ** Create new VM --- On a 16Meg Host Use 6144 Meg for Guest, 4 Cpus for Guets when 8 in host 75Gig disk
 ** Create new VM --- win10Pro-1-accounting
 ** Create new VM --- ~IMPORTANT~ -- choose "Customize configuration before install"
-** Yes to "Virtaul Network is not active"
+** Yes to "Virtual Network is not active"
 ** virt-manager --- Virtual Hardware Adjustments
 ** NOT-NEEDED:Virtual Hardware Adjustment: SATA Disk 1  --- Change SATA to VirtIO --- Apply
 ** Virtual Hardware Adjustment: NIC: Change Device model to virtio
