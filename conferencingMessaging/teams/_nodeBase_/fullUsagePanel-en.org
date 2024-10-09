@@ -37,9 +37,9 @@
 ** 
 ** Overview Comes Here.
 ** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Linux Install -- Interactive" :anchor "" :extraInfo "From The Web"
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Linux Install -- Interactive" :anchor "" :extraInfo "Not Reliable -- Use Chrome Browser"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Linux Install -- Interactive:* |]]  From The Web  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Linux Install -- Interactive:* |]]  Not Reliable -- Use Chrome Browser  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
 ** https://pureinfotech.com/install-microsoft-teams-linux/
@@ -58,6 +58,8 @@
 ** MUST USE CHROME
 ** -----
 ** As of 2022-08 /bin/teams does not work right. Browser access is reliable.
+** Login with your microsoft account
+** To join an invitation, go to _calendar_ - Use Join with an ID
 ** B|
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
