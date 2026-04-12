@@ -16,7 +16,7 @@ SEED="
 *  /[dblock]/ /Seed/ :: [[file:/bisos/core/bsip/bin/seedFtoCommon.sh]] |
 "
 FILE="
-*  /This File/ :: /bisos/panels/non-libre-halaal/conferencingMessaging/teams/ftoProc.sh
+*  /This File/ :: /bisos/panels/non-libre-halaal/MS-Windows/Windows-11/_nodeBase_/ftoProc.sh
 "
 if [ "${loadFiles}" == "" ] ; then
     /bisos/core/bsip/bin/seedFtoCommon.sh -l $0 "$@"
@@ -54,7 +54,6 @@ _CommentEnd_
 
 ####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
 nodesList="
-_nodeBase_
 "
 ####+END:
 
